@@ -4,7 +4,7 @@ const togglebtn = document.querySelector('.toggle-btn');
 togglebtn.addEventListener('click', () => {
     sidebar.classList.toggle('active');
 });
-const githubLink = 'https://github.com/ezruhbfizeh/laughing-octo-couscous';
+const githubLink = 'https://github.com/ezruhbfizeh/verbose-couscous/';
 document.getElementById('github-link').addEventListener('click', () => {
     shell.openExternal(githubLink);
 });
@@ -13,7 +13,7 @@ document.getElementById('telegram-link').addEventListener('click', () => {
     shell.openExternal(telegramLink);
 });
 document.addEventListener('DOMContentLoaded', () => {
-    const url = 'https://github.com/ezruhbfizeh/laughing-octo-couscous/refs/heads/main/gui/about';
+    const url = 'https://raw.githubusercontent.com/ezruhbfizeh/verbose-couscous/refs/heads/main/gui/about';
     const aboutTextElement = document.getElementById('about-text');
     const cacheBustingUrl = `${url}?t=${new Date().getTime()}`;
     fetch(cacheBustingUrl)
